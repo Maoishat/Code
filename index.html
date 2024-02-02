@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>校园餐厅推荐</title>
+    <link rel="stylesheet" href="style.css"> <!-- 引入外部CSS文件 -->
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="/login">登录</a>
+        <a href="/register">注册</a>
+    </div>
+    <h1>每日食物推荐</h1>
+    <ul>
+        {% for food in foods %}
+        <li>{{ food.name }} - {{ food.date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
